@@ -4,11 +4,70 @@
 }
 
 body {
-    background: blue;
+    background: rgb(94, 94, 94);
     color: #444;
     font-size: 12px;
     color: #333;
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+.labelcolor {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#color {
+    width: 200px;
+    height: 40px;
+}
+
+.space {
+    height: 20px;
+}
+
+.customize-container{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customize {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #222;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+}
+
+#download{
+    width: 200px;
+    height: 50px;
+    background: rgb(173, 171, 171);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border: none;
+}
+
+#fullscreen {
+    width: 200px;
+    height: 50px;
+    background: rgb(173, 171, 171);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border: none;
+}
+
+.content {
+    width: 420px;
+    height: 550px;
 }
 
 .content{
@@ -17,7 +76,7 @@ body {
 }
 
 .book-container{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,3 +222,4 @@ a#next_page_button:hover {
 a#prev_page_button:hover {
     background-position: 0px 0px;
 }
+
