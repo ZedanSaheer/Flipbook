@@ -2,6 +2,7 @@
 
 <head>
 	<title>Flipbook</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -9,58 +10,68 @@
 	<script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
 
 	<link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-<div class="book-container">
-	<div class="book_wrapper">
-		<a id="next_page_button" onclick="pageSound()"></a>
-		<a id="prev_page_button" onclick="pageSound()"></a>
-		<audio src="Page Flip.mp3" id="page"></audio>
+	<div class="book-container">
+		<div class="book_wrapper">
+			<a id="next_page_button" onclick="pageSound()"></a>
+			<a id="prev_page_button" onclick="pageSound()"></a>
+			<audio src="Page Flip.mp3" id="page"></audio>
 
-		<div id="mybook" style="display:none;">
-			<div class="b-load">
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
+			<div id="mybook" style="display:none;">
+				<div class="b-load">
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
+					<div class="content">
+						<img src="example/sample.jpg" alt="sample" />
+					</div>
 				</div>
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div >
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div>
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div >
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div>
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div >
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div>
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div >
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div>
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div >
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div>
-				<div class="content">
-					<img src="example/sample.jpg" alt="sample" />
-				</div >
 			</div>
 		</div>
 	</div>
-</div>
+	<div class="customize-container">
+		<div class="customize">
+			<a href="sample.pdf" download="sample.pdf"><button id="download">Download PDF</button></a>
+			<div class="space"></div>
+			<label for="favcolor" class="labelcolor">Choose Your Background Color :</label>
+			<input type="color" id="color" name="favcolor" value="#ffffff" id="color">
+			<div class="space"></div>
+			<button id="fullscreen" data-toggle-fullscreen>Toggle Fullscreen</button>
+		</div>
+	</div>
 	<script src="script.js" text/javascript"></script>
 </body>
-</html>
+</htm
