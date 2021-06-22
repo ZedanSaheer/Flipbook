@@ -68,7 +68,7 @@ if (!document.fullscreenElement) {
 }
 
 document.addEventListener('click', function (event) {
-
+    const customise=document.getElementById("customise");
 	if (!event.target.hasAttribute('data-toggle-fullscreen')) return;
 
 	if (document.fullscreenElement) {
@@ -76,7 +76,7 @@ document.addEventListener('click', function (event) {
         button.innerText="Toggle Fullscreen";
 	} else {
 		document.documentElement.requestFullscreen();
-        button.innerText="Exit Fullscreen";
+        customise.style.display="none";
 	}
 
     
