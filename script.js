@@ -1,4 +1,5 @@
 const button = document.getElementById("fullscreen");
+const customise=document.getElementById("customise");
 
 $(function () {
     var $mybook = $('#mybook');
@@ -81,6 +82,16 @@ document.addEventListener('click', function (event) {
 
     
 }, false);
+
+//hide customise box 
+
+document.addEventListener("fullscreenchange",(e)=>{
+    if (document.fullscreenElement) {
+        customise.style.display="none"
+      } else {
+        customise.style.display="block"
+      }
+})
 
 //background changer
 
