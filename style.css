@@ -12,13 +12,13 @@ body {
     overflow-x: hidden;
 }
 .labelcolor {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
 }
 
 #color {
-    width: 200px;
-    height: 40px;
+    width: 120px;
+    height: 30px;
 }
 
 .space {
@@ -34,33 +34,42 @@ body {
 }
 
 .customize {
-    width: 100vw;
+    width: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background: #222;
-    padding: 40px;
+    background: rgb(105, 105, 105);
+    padding: 40px 0;
+    position: fixed;
     border-radius: 10px;
+    top: 0;
+    left: 0;
+    z-index: 999;
     box-shadow: 2px 2px 8px black;
+    font-family: "oswald";
 }
 
 #download{
-    width: 200px;
-    height: 50px;
-    background: rgb(173, 171, 171);
+    width: 120px;
+    height: 30px;
+    font-size: .5rem;
+    background: rgb(0, 0, 0);
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
+    font-weight: 900;
     border: none;
 }
 
 #fullscreen {
-    width: 200px;
-    height: 50px;
-    background: rgb(173, 171, 171);
+    width: 120px;
+    height: 30px;
+    font-size: .5rem;
+    font-weight: 900;
+    background: rgb(0, 0, 0);
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     border: none;
 }
