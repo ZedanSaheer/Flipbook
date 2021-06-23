@@ -1,5 +1,6 @@
 const button = document.getElementById("fullscreen");
 const customise=document.getElementById("customise");
+const share= document.getElementsByClassName("at-expanding-share-button-toggle-bg");
 
 $(function () {
     var $mybook = $('#mybook');
@@ -29,7 +30,6 @@ $(function () {
                     next: $bttn_next,          			 
                     prev: $bttn_prev,          			
                 });
-                Cufon.refresh();
             }
         }).attr('src', source);
     });
@@ -51,6 +51,7 @@ if (!Element.prototype.requestFullscreen) {
 
 if (!document.exitFullscreen) {
 	document.exitFullscreen = document.mozExitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+    customise.style.display="block";
 }
 
 if (!document.fullscreenElement) {
@@ -69,7 +70,6 @@ if (!document.fullscreenElement) {
 }
 
 document.addEventListener('click', function (event) {
-    const customise=document.getElementById("customise");
 	if (!event.target.hasAttribute('data-toggle-fullscreen')) return;
 
 	if (document.fullscreenElement) {
@@ -77,19 +77,19 @@ document.addEventListener('click', function (event) {
         button.innerText="Toggle Fullscreen";
 	} else {
 		document.documentElement.requestFullscreen();
-        customise.style.display="none";
 	}
-
-    
+   
 }, false);
 
-//hide customise box 
+//hide customize box on fullscreen
 
 document.addEventListener("fullscreenchange",(e)=>{
     if (document.fullscreenElement) {
-        customise.style.display="none"
+        customise.style.display="none";
+        share[0].style.display="none";
       } else {
-        customise.style.display="block"
+        customise.style.display="flex";
+        share[0].style.display="block";
       }
 })
 
