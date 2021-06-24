@@ -9,10 +9,15 @@ body {
     font-size: 12px;
     color: #333;
     font-family: 'Oswald', sans-serif;
-    overflow-x: hidden;
+    overflow: scroll;
 }
 .labelcolor {
     font-size: 1rem;
+    color: white;
+}
+
+.fas{
+    font-size: 2rem;
     color: white;
 }
 
