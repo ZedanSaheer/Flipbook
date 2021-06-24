@@ -1,6 +1,7 @@
 const button = document.getElementById("fullscreen");
 const customise=document.getElementById("customise");
 const share= document.getElementsByClassName("at-expanding-share-button-toggle-bg");
+const Book=document.getElementById("bookcontainer");
 
 $(function () {
     var $mybook = $('#mybook');
@@ -110,4 +111,13 @@ function updateFirst(event) {
   if (body) {
     body.style.backgroundColor = event.target.value;
   }
+}
+
+// zoom function 
+
+function myZoomIn(){
+  Book.style.transform="scale(2)";
+}
+function myZoomOut(){
+  Book.style.transform="scale(1)";
 }
